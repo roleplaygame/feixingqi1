@@ -1,0 +1,20 @@
+<!DOCTYPE html>  
+<html>  
+<body>  
+  <h1>❤️ 情侣飞行棋 ❤️</h1>  
+  <button onclick="roll()">掷骰子</button>  
+  <p id="task">任务将显示在这里</p>  
+  <script>  
+    const tasks = [  
+      "亲吻对方的手背",  
+      "脱掉一只袜子",  
+      "用舌尖写字母在对方手心",  
+      "互换上衣10分钟"  
+    ];  
+    function roll() {  
+      const randomTask = tasks[Math.floor(Math.random() * tasks.length)];  
+      document.getElementById("task").innerHTML = randomTask;  
+    }  
+  </script>  
+</body>  
+</html>  
